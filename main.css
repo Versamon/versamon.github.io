@@ -1,0 +1,208 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #fa8c68;
+	font-family: "Roboto Slab", serif;
+	font-weight: 700;
+	/* overflow: hidden; */
+}
+.body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 9vh;
+}
+.hat,
+.post_content,
+.comments,
+.body {
+	display: flex;
+	flex-direction: column;
+}
+
+/* 
+Боковое меню
+*/
+
+.menu {
+	height: 86vh;
+	max-width: 20vw;
+	width: 20vw;
+	background-color: rgba(250, 240, 230, 0.902);
+	position: fixed;
+	top: 15vh;
+	left: -20vw;
+	border-radius: 50px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+li {
+	list-style-type: none;
+}
+
+/* 
+Шапка
+*/
+
+.hat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: -8vh 1vw 1vh;
+	height: 7vh;
+	width: 98vw;
+	background-color: #f9571c;
+	opacity: 0.8;
+	border-radius: 51vh;
+	position: fixed;
+	vertical-align: middle;
+}
+.text {
+	align-self: center;
+	font-size: 150%;
+	color: #6d1c00;
+}
+.menuButton {
+	margin: 1vh;
+	height: 5vh;
+	width: 5vh;
+	border-radius: 25px;
+	background-color: white;
+	position: fixed;
+	align-self: flex-start;
+}
+
+/* 
+
+*/
+
+#fstpost {
+	margin-top: 9vh;
+}
+.post {
+	width: 75vw;
+	max-width: 75vw;
+	flex-basis: 20vh;
+	border-radius: 25px;
+	background-color: white;
+	margin-bottom: 1vh;
+	font-size: 16pt;
+	font-weight: 500;
+}
+.post_content {
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+}
+.post_text {
+	text-indent: 20px;
+}
+.post_content .user_name {
+	width: 100px;
+}
+.comment {
+	width: 200px;
+	height: 50px;
+	resize: none;
+	display: flex;
+}
+.submit {
+	width: 8%;
+}
+.menu_item {
+	background-color: white;
+	border-radius: 50px;
+	margin: 2vh;
+	padding: 7px;
+	text-align: center;
+	font-weight: 400;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.form_name {
+	width: 300px;
+}
+.form_text {
+	height: 50vh;
+	align-self: stretch;
+}
+
+.form_name,
+.form_text {
+	outline: none;
+	border: 0px;
+	border-radius: 10px;
+	padding: 5px;
+	resize: none;
+	margin: 1vh 0vw;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: inherit;
+	background-color: #979797;
+	text-align: justify;
+}
+button,
+.file {
+	border-style: none;
+	align-self: flex-end;
+	background-color: rgb(214, 214, 214);
+	border-radius: 50px;
+	padding: 7px;
+	text-align: center;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: inherit;
+}
+.file {
+	font-size: 14pt;
+	align-self: flex-start;
+}
+.image {
+	width: 15vw;
+	height: 15vw;
+}
+.film_poster {
+	height: 15vw;
+}
+
+/* 
+Комментарии
+*/
+
+.comments {
+	align-items: flex-start;
+	justify-self: flex-end;
+	background-color: #bebebe;
+	border-radius: 23px;
+	padding: 5px;
+	text-indent: 0;
+}
+.comment_form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.comment_author,
+.comment_text {
+	outline: none;
+}
+.comment_form input {
+	width: 25%;
+}
+.username {
+	background-color: rgb(214, 214, 214);
+	border-radius: 50px;
+	padding: 7px;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: inherit;
+}
